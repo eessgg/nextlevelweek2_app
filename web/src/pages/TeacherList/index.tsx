@@ -1,7 +1,8 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader'
 import TeacherItem from '../../components/TeacherItem'
-
+import Input from '../../components/Input'
+import Select from '../../components/Select'
 import './styles.css'
 
 const TeacherList = () => {
@@ -9,23 +10,31 @@ const TeacherList = () => {
     <div id="page-teacher-list" className="container">
       <PageHeader title="Estes sãp os proffys disponiveis" >
           <form id="search-teachers">
-            <div className="input-block">
-              <label htmlFor="subject">Matérias</label>
-              <input type="text" id="subject" />
-            </div>
-            <div className="input-block">
-              <label htmlFor="week_day">Dias da semana</label>
-              <input type="text" id="week_day" />
-            </div>
-            <div className="input-block">
-              <label htmlFor="time">Hora</label>
-              <input type="text" id="time" />
-            </div>
-          </form>
+            <Input name="subject" label="Matéria" />
+            <Select name="subject" label="Matéria" options={[
+              { value: 'Artes', label: 'Artes' },
+              { value: 'Biologia', label: 'Biologia' },
+              { value: 'Ciências', label: 'Ciências' },
+              { value: 'Física', label: 'Física' },
+            ]} />
+            <Select name="week_day" label="Matéria" options={[
+              { value: '0', label: 'Domingo' },
+              { value: '1', label: 'Segunda' },
+              { value: '2', label: 'terça' },
+              { value: '3', label: 'Quarta' },
+            ]} />
+
+            <Input name="week_day" label="Dia da Semana" />
+            <Input name="time" label="Hora" />
+          </form>  
       </PageHeader>
         
         <main>
           <TeacherItem />
+          <TeacherItem />
+          <TeacherItem />
+          <TeacherItem />
+
         </main>
       
     </div>
