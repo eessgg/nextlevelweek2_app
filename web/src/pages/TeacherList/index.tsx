@@ -22,9 +22,10 @@ const TeacherList = () => {
               { value: '1', label: 'Segunda' },
               { value: '2', label: 'terça' },
               { value: '3', label: 'Quarta' },
+              { value: '4', label: 'Quinta' },
+              { value: '5', label: 'Sexta' },
+              { value: '6', label: 'Sábado' },
             ]} />
-
-            <Input name="week_day" label="Dia da Semana" />
             <Input name="time" label="Hora" />
           </form>  
       </PageHeader>
