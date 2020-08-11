@@ -21,14 +21,14 @@
 
 .page-header .top-bar-container a {
   height: 3.2rem;
-  transition: opacity 02s;
+  transition: opacity 0.2s;
 }
 
 .page-header .top-bar-container a:hover {
   opacity: 0.6;
 }
 
-.page-header .top-bar-container>img {
+.page-header .top-bar-container > img {
   height: 1.6rem;
 }
 
@@ -76,5 +76,4 @@
   .page-header .header-content strong {
     max-width: 350px;
   }
-
 }

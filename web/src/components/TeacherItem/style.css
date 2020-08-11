@@ -34,7 +34,7 @@
   margin-top: 0.4rem;
 }
 
-.teacher-item>p {
+.teacher-item > p {
   padding: 0 2 rem;
   font-size: 1.6rem;
 }
@@ -59,6 +59,7 @@
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secundary);
+  color: var(--color-button-text);
   border: 0;
   border-radius: 0.8rem;
   cursor: pointer;
@@ -79,13 +80,19 @@
     padding: 3.2rem;
   }
 
-  .teacher-item>p {
+  .teacher-item > p {
     padding: 0 3.2rem;
   }
 
   .teacher-item footer p strong {
     display: initial;
     margin-left: 1.6rem;
+    justify-content: center;
+  }
+
+  .teacher-item footer button {
+    width: 24.5rem;
+    font-size: 1.6rem;
     justify-content: center;
   }
 

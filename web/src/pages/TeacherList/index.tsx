@@ -1,15 +1,19 @@
 import React from 'react';
+
 import PageHeader from '../../components/PageHeader'
 import TeacherItem from '../../components/TeacherItem'
 import Input from '../../components/Input'
 import Select from '../../components/Select'
+
 import './styles.css'
 
 const TeacherList = () => {
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader title="Estes sãp os proffys disponiveis" >
-          <form id="search-teachers">
+      <PageHeader
+        title="Estes sãp os proffys disponíveis"
+      >
+        <form id="search-teachers">
             <Input name="subject" label="Matéria" />
             <Select name="subject" label="Matéria" options={[
               { value: 'Artes', label: 'Artes' },
@@ -30,14 +34,12 @@ const TeacherList = () => {
           </form>  
       </PageHeader>
         
-        <main>
-          <TeacherItem />
-          <TeacherItem />
-          <TeacherItem />
-          <TeacherItem />
-
-        </main>
-      
+      <main>
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+      </main>      
     </div>
   );
 }
