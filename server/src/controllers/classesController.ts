@@ -26,7 +26,7 @@ export default class ClassesController {
     const timeInMinutes = convHourToMinutes(time);
 
     const classes = await db("classes")
-      .whereExists(function() {
+      .whereExists(function () {
         this.select("class_schedule.*")
           .from("class_schedule")
           .whereRaw("`class_schedule`.`class_id` = `classes`.`id`")
@@ -82,16 +82,15 @@ export default class ClassesController {
           to: convHourToMinutes(scheduleItem.to),
         };
       });
-
       await trx("class_schedule").insert(classSchedule);
-
       await trx.commit();
-
       return res.status(201).send();
+
     } catch (error) {
       await trx.rollback();
+      
       return res.status(400).json({
-        error: "Unexpected error create class",
+        error: "Unexpected error while creating new class",
       });
     }
   }
