@@ -1,18 +1,19 @@
-import React, {SelectHTMLAttributes} from 'react';
+import React, {InputHTMLAttributes} from 'react';
 
 import './styles.css'
 
-interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
+interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
   label: string;
   name: string;
 }
 
-const Select: React.FC<SelectProps> = ({label, name, ...rest}) => {
+const Input: React.FC<InputProps> = ({label, name, ...rest}) => {
   return (
-    <div className="delect-block">
-      <label htmlFor={name}>{label}</label>
+    <div className="input-block">
+      <label htmlFor={name}> {label}</label>
+      <input type="text" id={name} {...rest} />
     </div>
   );
 }
 
-export default Select;
+export default Input;
