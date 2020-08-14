@@ -31,9 +31,11 @@ function Landing() {
       </Text>
 
       <View style={styles.buttonContainer}>
-        <RectButton onPress={handleNavigateToStudyPages}  style={[styles.button, styles.buttonPrimary]}>
+        <RectButton 
+          onPress={handleNavigateToStudyPages}
+          style={[styles.button, styles.buttonPrimary]}
+        >
           <Image source={studyIcon} />
-
           <Text style={styles.buttonText}>Estudar</Text>
         </RectButton>
 
@@ -42,10 +44,10 @@ function Landing() {
           style={[styles.button, styles.buttonSecondary]}
         >
           <Image source={giveclassesIcon} />
-
           <Text style={styles.buttonText}>Dar Aulas</Text>
         </RectButton>
       </View>
+      
       <Text style={styles.totalConnections}>
         Total de 205 conexões <Image source={heartIcon} />
       </Text>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import Favorites from '../pages/Favorites';
 import TeacherList from '../pages/TeacherList';
+
 import { Ionicons } from '@expo/vector-icons'
-import { TabBarIOS } from 'react-native';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
