@@ -12,12 +12,13 @@ interface PageHeaderProps {
   headerRight?: ReactNode,
 }
 
-const PageHeader: React.FunctionComponent<PageHeaderProps> = ({title}) => {
+const PageHeader: React.FunctionComponent<PageHeaderProps> = ({ title, headerRight,children}) => {
   const { navigate } = useNavigation();
 
   function handleGoBack() {
     navigate('Landing');
   }
+  
   return (
     <View style={styles.container}>
       <View style={styles.topBar}>
@@ -26,8 +27,12 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = ({title}) => {
         </BorderlessButton>
         <Image source={logoImg} resizeMode='contain'></Image>
       </View>
-      
-      <Text style={styles.title}>{title}</Text>
+
+      <View style={styles.header}>
+        <Text style={styles.title}>{title}</Text>
+        {headerRight}
+      </View>
+      {children}
     </View>
   )
 }

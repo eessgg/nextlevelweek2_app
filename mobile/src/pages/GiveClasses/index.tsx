@@ -8,9 +8,11 @@ import giveClassesBgImg from '../../assets/images/give-classes-background.png';
 
 function  GiveClasses() {
   const { goBack } = useNavigation();
+
   function handleNavigationBack() {
     goBack();
   }
+
   return (
     <View style={styles.container}>
       <ImageBackground

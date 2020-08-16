@@ -4,7 +4,7 @@ import { Archivo_400Regular } from "@expo-google-fonts/archivo";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#63b49f",
+    backgroundColor: "#9871f5",
     justifyContent: "center",
     padding: 40,
   },
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 
   okButton: {
     marginVertical: 40,
-    backgroundColor: "#9c3f3f",
+    backgroundColor: "#98f8ff",
     height: 58,
     alignItems: "center",
     justifyContent: "center",

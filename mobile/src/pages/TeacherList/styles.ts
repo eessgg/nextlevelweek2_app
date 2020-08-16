@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
   },
 
   teacherList: {
-    marginTop: -40,
+    marginTop: -60,
+    padding: 16
   },
 
   searchForm: {
     marginBottom: 24,
-
   },
 
   label: {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
 
   submitButton: {
-    backgroundColor: '#04e361',
+    backgroundColor: '#04d361',
     height: 56,
     borderRadius: 8,
     flexDirection: 'row',
